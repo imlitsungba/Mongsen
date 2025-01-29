@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Artists</title>
+    <style>
+        body {
+            font-family: 'Garamond', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('pic.jpg') no-repeat center center / cover;
+            color: #ffffff;
+        }
+        header {
+            background: #1db954;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 8em;
+        }
+        header p {
+            margin: 5px 0;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('pic.jpg') no-repeat center center / cover;
+            color: #ffffff;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        .top-artists-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+        .artist-card {
+            background: #272725;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            color: #fff;
+            transition: transform 0.3s ease;
+        }
+        .artist-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+        .artist-card:hover {
+            transform: translateY(-60px);
+        }
+        .artist-card h3 {
+            font-size: 1.8em;
+            margin-top: 10px;
+        }
+        .artist-card p {
+            font-size: 1em;
+            color: #bbb;
+        }
+        footer {
+            background: #1db954;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Music Hub</h1>
+    <p>Discover your favorite artists</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="featured.html">Featured</a>
+    <a href="genres.html">Genres</a>
+    <a href="top artist.html">Top Artists</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Top Artists</h2>
+    <p>Explore the most popular artists in the music industry right now.</p>
+</div>
+
+<div class="top-artists-section">
+    <div class="artist-card">
+        <img src="bruno mars.jfif" alt="Artist 1">
+        <h3>Bruno Mars</h3>
+        <p>Pop sensation with chart-topping hits.</p>
+        <audio controls>
+            <source src="Audio.mp3" type="audio/mpeg">
+                    </audio>
+    </div>
+
+    <div class="artist-card">
+        <img src="kendrick lamar (1).jfif" alt="Artist 2">
+        <h3>Kendrick Lamar</h3>
+        <p>Influential rapper and lyricist in hip-hop.</p>
+<audio controls>
+            <source src="Kendrick Lamar.mp4" type="audio/mpeg">
+            
+        </audio>
+
+    </div>
+
+    <div class="artist-card">
+        <img src="ariana grande.jpg" alt="Artist 3">
+        <h3>Ariana Grande</h3>
+        <p>Pop and R&B singer with powerful vocals.</p>
+<audio controls>
+            <source src="Sabrina Carpenter - Espresso (Official Video) - SabrinaCarpenterVEVO.mp3" type="audio/mpeg">
+            
+        </audio>
+
+    </div>
+
+    <div class="artist-card">
+        <img src="bad bunny.jpg" alt="Artist 4">
+        <h3>Bad Bunny</h3>
+        <p>Reggaeton and Latin trap artist from Puerto Rico.</p>
+<audio controls>
+            <source src="BAD BUNNY x DRAKE - MÍA (Video Oficial) - Bad Bunny.mp3" type="audio/mpeg">
+            
+        </audio>
+    </div>
+</div>
+
+<footer>
+    <a href="https://www.instagram.com/spotify" target="_blank">Follow us on Instagram</a>
+    <p>&copy; 2025 Music Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

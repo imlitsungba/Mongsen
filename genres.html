@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genres - Music Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background anime pic .png') no-repeat center center / cover;
+            color: #ffffff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 4em;
+            color: #ffffff;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #e0e0e0; /* Lighter color for text */
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7); /* Dark background for better contrast */
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+           
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+            color: #ffffff;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .genre-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        .genre-card {
+            background: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
+            border-radius: 15px;
+            overflow: hidden;
+            width: 400px;
+            transition: transform 0.3s ease;
+        }
+        .genre-card:hover {
+            transform: scale(1.05);
+        }
+        .genre-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .genre-card-content {
+            padding: 20px;
+        }
+        .genre-card h3 {
+            font-size: 2.5em;
+            color: #ff4081; /* Pink color to contrast and pop */
+            margin: 10px 0;
+        }
+        .genre-card p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #e0e0e0; /* Lighter text color for readability */
+        }
+        .song-article {
+            background: rgba(39, 39, 37, 0.9); /* Slightly lighter background for article section */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .song-article img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .song-article h4 {
+            font-size: 2em;
+            color: #ff4081; /* Pink color for heading */
+            margin-top: 15px;
+        }
+        .song-article p {
+            font-size: 1.1em;
+            color: #ccc;
+            margin-top: 15px;
+        }
+        .song-article a {
+            color: #ff4081;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 15px;
+            display: block;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7); /* Matching the theme of the rest of the page */
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Music Hub</h1>
+    <p>Explore the Best Music Genres and Songs</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="featured.html">Featured</a>
+    <a href="genres.html">Genres</a>
+    <a href="top artist.html">Top Artists</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Discover Music Genres & Songs</h2>
+    <p>Find more about each genre, its songs, and their impact on the music world.</p>
+</div>
+
+<div class="genre-container">
+    <!-- Pop Genre Card -->
+    <div class="genre-card">
+        <img src="pop music pic.jpg" alt="Pop Genre Image">
+        <div class="genre-card-content">
+            <h3>Pop</h3>
+            <p>Catchy, energetic, and chart-topping music that's loved worldwide.</p>
+        </div>
+    </div>
+
+    <!-- Rock Genre Card -->
+    <div class="genre-card">
+        <img src="rock music pic.jpg" alt="Rock Genre Image">
+        <div class="genre-card-content">
+            <h3>Rock</h3>
+            <p>Powerful rhythms, electrifying guitar riffs, and unforgettable anthems.</p>
+        </div>
+    </div>
+
+    <!-- Jazz Genre Card -->
+    <div class="genre-card">
+        <img src="jazz music pic.jfif" alt="Jazz Genre Image">
+        <div class="genre-card-content">
+            <h3>Jazz</h3>
+            <p>Complex rhythms, improvisation, and smooth melodies define this genre.</p>
+        </div>
+    </div>
+    <!-- Hip-Hop Genre Card -->
+    <div class="genre-card">
+        <img src="hip hope .jpg" alt="Hip-Hop Genre Image">
+        <div class="genre-card-content">
+            <h3>Hip-Hop</h3>
+            <p>Rhythmic beats, lyrical storytelling, and a culture that defines youth.</p>
+        </div>
+    </div>
+
+    <!-- EDM Genre Card -->
+    <div class="genre-card">
+        <img src="edm .jfif" alt="EDM Genre Image">
+        <div class="genre-card-content">
+            <h3>EDM</h3>
+            <p>Electronic beats, high-energy drops, and festival anthems.</p>
+        </div>
+    </div>
+
+    <!-- Reggae Genre Card -->
+    <div class="genre-card">
+        <img src="reggae.jfif" alt="Reggae Genre Image">
+        <div class="genre-card-content">
+            <h3>Reggae</h3>
+            <p>Groovy rhythms, soulful melodies, and messages of peace and love.</p>
+        </div>
+    </div>
+
+    <!-- Classical Genre Card -->
+    <div class="genre-card">
+        <img src="classical.webp" alt="Classical Genre Image">
+        <div class="genre-card-content">
+            <h3>Classical</h3>
+            <p>Complex compositions, orchestral arrangements, and timeless symphonies.</p>
+        </div>
+    </div>
+
+    <!-- Country Genre Card -->
+    <div class="genre-card">
+        <img src="country.jfif" alt="Country Genre Image">
+        <div class="genre-card-content">
+            <h3>Country</h3>
+            <p>Storytelling lyrics, twangy guitars, and Southern charm.</p>
+        </div>
+    </div>
+
+    <!-- Blues Genre Card -->
+    <div class="genre-card">
+        <img src="blues.webp" alt="Blues Genre Image">
+        <div class="genre-card-content">
+            <h3>Blues</h3>
+            <p>Emotional depth, soulful guitar riffs, and the sound of the human experience.</p>
+        </div>
+    </div>
+
+    <!-- Soul Genre Card -->
+    <div class="genre-card">
+        <img src="soul.jpg" alt="Soul Genre Image">
+        <div class="genre-card-content">
+            <h3>Soul</h3>
+            <p>Deep, passionate vocals with rhythm and blues influences.</p>
+        </div>
+    </div>
+
+    <!-- Latin Genre Card -->
+    <div class="genre-card">
+        <img src="latin.webp" alt="Latin Genre Image">
+        <div class="genre-card-content">
+            <h3>Latin</h3>
+            <p>Rhythmic dance beats, vibrant melodies, and a rich cultural history.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Song Articles Section -->
+<div class="song-article">
+    <!-- Featured Articles -->
+    <!-- Pop Song Article -->
+    <h4>Featured Pop Song: "Blinding Lights" by The Weeknd</h4>
+    <img src="blinding lights.jpg" alt="Blinding Lights">
+    <p>"Blinding Lights" is one of the biggest pop hits of the 2020s, a track that combines retro 80s synth-pop with modern beats...</p>
+    <a href="https://open.spotify.com/track/6qYkmqFsXbj8CQjAdbYz07?si=2c62e930f5eb4b08">Listen on Spotify</a>
+</div>
+
+<div class="song-article">
+    <!-- Rock Song Article -->
+    <h4>Featured Rock Song: "Bohemian Rhapsody" by Queen</h4>
+    <img src="Bohemian Rhapsody.jpg" alt="Bohemian Rhapsody">
+    <p>"Bohemian Rhapsody" is arguably one of the greatest rock songs of all time. Released in 1975 by the iconic band Queen, the song combines elements of rock, opera, and ballad. Written by lead vocalist Freddie Mercury, "Bohemian Rhapsody" defies conventional song structures, and its unique blend of genres helped define Queen’s legacy as one of the most innovative bands in rock history. The track has stood the test of time, continuously being recognized in “best of” lists and enjoyed by fans across generations.</p>
+    <a href="https://open.spotify.com/track/4u7EnebtmKWzUH433cf5Qv?si=56dacb5781ac4631">Listen on Spotify</a>
+</div>
+
+<div class="song-article">
+    <!-- Jazz Song Article -->
+    <h4>Featured Jazz Song: "So What" by Miles Davis</h4>
+    <img src="miles davis.jfif" alt="So What by Miles Davis">
+    <p>"So What" is a jazz masterpiece by Miles Davis, featured on his seminal album *Kind of Blue* (1959). This track epitomizes the modal jazz style Davis pioneered, using scales rather than traditional chord changes to create a more open and free-flowing structure. With its subtle complexities, "So What" has become one of the most influential jazz compositions, influencing generations of musicians across genres.</p>
+    <a href="https://open.spotify.com/track/4vLYewWIvqHfKtJDk8c8tq?si=04ddfe1d77994ce4">Listen on Spotify</a>
+</div>
+<div class="song-article">
+    <!-- Hip-Hop Song Article -->
+    <h4>Featured Hip-Hop Song: "Sicko Mode" by Travis Scott</h4>
+    <img src="Sicko Mode.jfif" alt="Sicko Mode">
+    <p>"Sicko Mode" is a groundbreaking hip-hop track by Travis Scott, known for its unpredictable structure and use of multiple beats and melodies. Released in 2018, this song showcases Scott's innovative style, blending trap beats with psychedelic influences. Its complex production, combined with contributions from other artists like Drake, made it a defining song of the decade.</p>
+    <a href="https://open.spotify.com/track/2xLMifQCjDGFmkHkpNLD9h?si=29482ebf60d64f43">Listen on Spotify</a>
+</div>
+
+<div class="song-article">
+    <!-- EDM Song Article -->
+    <h4>Featured EDM Song: "Strobe" by Deadmau5</h4>
+    <img src="Strobe.jpg" alt="Strobe by Deadmau5">
+    <p>"Strobe" by Deadmau5 is one of the most iconic tracks in the electronic dance music (EDM) scene. Released in 2009, this progressive house anthem has captivated listeners with its epic build-up and ethereal drop. It is known for its emotional, cinematic feel, making it a favorite among EDM fans worldwide.</p>
+    <a href="https://open.spotify.com/track/4kJWtxDDNb9oAk3h7sX3N4?si=12e9a8eb3d5540d7">Listen on Spotify</a>
+</div>
+
+<div class="song-article">
+    <!-- Reggae Song Article -->
+    <h4>Featured Reggae Song: "No Woman, No Cry" by Bob Marley</h4>
+    <img src="No Woman, No Cry.jpg" alt="No Woman, No Cry">
+    <p>"No Woman, No Cry" is one of Bob Marley's most beloved reggae songs. Originally released in 1974, this track became a global anthem, symbolizing hope and resilience. Marley's powerful lyrics and soulful voice resonate deeply with listeners, and the song remains a timeless classic in reggae music.</p>
+    <a href="https://open.spotify.com/track/423hwXFgoN8RYmqLoLuVvY?si=c258047a6a994c41">Listen on Spotify</a>
+</div>
+
+<div class="song-article">
+    <!-- Classical Song Article -->
+    <h4>Featured Classical Song: "Clair de Lune" by Claude Debussy</h4>
+    <img src="Clair de Lune.jfif" alt="Clair de Lune by Claude Debussy">
+    <p>"Clair de Lune" is one of Claude Debussy's most famous compositions, widely regarded as a masterpiece of impressionist music. Its serene, flowing melodies and ethereal atmosphere have made it a favorite among classical music enthusiasts. Composed in 1890 and later revised, it remains a staple of the piano repertoire.</p>
+    <a href="https://open.spotify.com/track/6Er8Fz6fuZNi5cvwQjv1ya?si=aa4a2bc8dcb041c1">Listen on Spotify</a>
+</div>
+
+<div class="song-article">
+    <!-- Country Song Article -->
+    <h4>Featured Country Song: "Jolene" by Dolly Parton</h4>
+    <img src="Jolene by Dolly Parton.jpg" alt="Jolene by Dolly Parton">
+    <p>"Jolene" by Dolly Parton is an iconic country ballad released in 1973. The song tells the story of a woman pleading with another to not take away her man. Known for its haunting melody and poignant lyrics, "Jolene" has become one of country music's most enduring songs, covered by many artists in various genres.</p>
+    <a href="https://open.spotify.com/track/2SpEHTbUuebeLkgs9QB7Ue?si=ad072131a7f0478f">Listen on Spotify</a>
+</div>
+
+<div class="song-article">
+    <!-- Blues Song Article -->
+    <h4>Featured Blues Song: "The Thrill Is Gone" by B.B. King</h4>
+    <img src="The Thrill Is Gone.jfif" alt="The Thrill Is Gone by B.B. King">
+    <p>"The Thrill Is Gone" is a classic blues song by the legendary B.B. King. Released in 1969, this track blends soulful guitar playing with King’s heartfelt vocal delivery, capturing the pain of lost love. It became one of his most famous songs, solidifying his status as a pioneer of modern blues.</p>
+    <a href="https://open.spotify.com/track/4NQfrmGs9iQXVQI9IpRhjM?si=1e7f4b5a29394eb7">Listen on Spotify</a>
+</div>
+
+<div class="song-article">
+    <!-- Soul Song Article -->
+    <h4>Featured Soul Song: "What's Going On" by Marvin Gaye</h4>
+    <img src="What's Going On.webp" alt="What's Going On by Marvin Gaye">
+    <p>"What's Going On" by Marvin Gaye is an influential soul track that addresses social and political issues, including war, poverty, and inequality. Released in 1971, the song remains relevant today due to its powerful message and Gaye’s impassioned performance. It is considered one of the greatest songs of all time.</p>
+    <a href="https://open.spotify.com/track/3Um9toULmYFGCpvaIPFw7l?si=3b4584f15a9c4088">Listen on Spotify</a>
+</div>
+
+<div class="song-article">
+    <!-- Latin Song Article -->
+    <h4>Featured Latin Song: "Despacito" by Luis Fonsi ft. Daddy Yankee</h4>
+    <img src="Despacito.jpg" alt="Despacito by Luis Fonsi ft. Daddy Yankee">
+    <p>"Despacito" is a reggaeton and Latin pop song by Puerto Rican singer Luis Fonsi featuring Daddy Yankee. Released in 2017, the song became a global hit, breaking streaming records and topping charts worldwide. Its catchy rhythm, infectious melody, and memorable lyrics helped bring Latin music into the global mainstream.</p>
+    <a href="https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb?si=05a9ad57806a4167">Listen on Spotify</a>
+</div>
+
+<footer>
+    <a href="https://www.instagram.com/spotify" target="_blank">Follow us on Instagram</a>
+    <p>&copy; 2025 Music Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
